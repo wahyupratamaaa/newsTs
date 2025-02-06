@@ -13,13 +13,12 @@ type PropsSection = {
 
 const SectionComponent = ({ title, des, image, sosmed }: PropsSection) => {
   return (
-    <div className='w-screen h-auto py-12'>
+    <div className='w-screen h-auto py-12 pt-32'>
       <div className='px-4 sm:px-8 md:px-16 lg:px-28'>
         <div className='flex gap-5 justify-between'>
-          <span className='text-8xl min-w-3xl font-bold text-zinc-500'>
+          <span className='text-8xl min-w-3xl font-bold text-zinc-500 w-2/3'>
             {title}
           </span>
-
           <span className='flex flex-col justify-end w-1/5 text-sm'>{des}</span>
         </div>
         <div className='relative mt-10 cursor-pointer'>
@@ -27,8 +26,8 @@ const SectionComponent = ({ title, des, image, sosmed }: PropsSection) => {
             src={image}
             alt='tema'
             className='w-full h-[700px] mt-10 rounded-2xl cursor-pointer'
-            width={100}
-            height={100}
+            width={1000}
+            height={700}
           />
           <div className='absolute top-0 left-0 p-10'>
             <p className='text-2xl font-semibold text-white'>BioEnergy</p>
@@ -44,7 +43,6 @@ const SectionComponent = ({ title, des, image, sosmed }: PropsSection) => {
     </div>
   );
 };
-
 const SectionList = () => {
   return (
     <>

@@ -14,29 +14,6 @@ export const Tag = [
   },
 ];
 
-export const navSmile = [
-  {
-    id: 1,
-    value: 'About',
-  },
-  {
-    id: 2,
-    value: 'News',
-  },
-  {
-    id: 3,
-    value: 'Events',
-  },
-  {
-    id: 4,
-    value: 'Programmes',
-  },
-  {
-    id: 5,
-    value: 'Help center',
-  },
-];
-
 export const navbar = [
   {
     title: 'ieaEnergy',

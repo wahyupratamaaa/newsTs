@@ -20,7 +20,13 @@ const Likeorno = () => {
       <div className='flex flex-col gap-3 items-center p-5'>
         <div className='text-black text-lg font-medium ml-2 text-center'>
           {liked === null ? (
-            <Image src='/like.gif' alt='Like' width={50} height={50} />
+            <Image
+              src='/like.gif'
+              alt='Like'
+              width={50}
+              height={50}
+              unoptimized
+            />
           ) : (
             <>
               <Image
@@ -28,13 +34,14 @@ const Likeorno = () => {
                 alt={liked ? 'Like' : 'Disklike'}
                 width={50}
                 height={50}
+                unoptimized
               />
             </>
           )}
         </div>
         <p className='text-black text-lg font-medium ml-2 text-center'>
           Bagaimana pendapat Anda tentang News <br />
-          ieaEnergy? Berikan tanggapan <br /> Anda. Terima kasih.
+          ieaEnergy? Berikan tanggapan <br /> Terima kasih.
         </p>
         <div className='flex gap-3 cursor-pointer'>
           <p

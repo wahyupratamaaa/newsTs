@@ -1,22 +1,22 @@
 import React from 'react';
-import Navsmile from './navsmile';
-import Navbar from './navbar';
+// import Navsmile from './navsmile';
+// import Navbar from './navbar';
 import Section from './section';
 import Tag from './tag';
 import SampulTag from './sampultag';
 import Slide from './slide';
 
-const Index = () => {
+const Page = () => {
   return (
-    <div>
-      <Navsmile />
-      <Navbar />
+    <>
+      {/* <Navsmile />
+      <Navbar /> */}
       <Section />
       <Tag />
       <SampulTag />
       <Slide />
-    </div>
+    </>
   );
 };
 
-export default Index;
+export default Page;

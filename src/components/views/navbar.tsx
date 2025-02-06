@@ -19,7 +19,9 @@ const Navbar = () => {
       <div className='px-4 sm:px-8 md:px-16 lg:px-28 flex justify-between '>
         <div className='flex gap-16'>
           <div className='flex items-center gap-3'>
-            <p className='text-black text-2xl font-normal'>{title}</p>
+            <Link href='/error'>
+              <p className='text-black text-2xl font-normal'>{title}</p>
+            </Link>
           </div>
         </div>
         <div className='flex gap-6 items-center justify-between cursor-pointer'>
