@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { slideData } from '../../pages/api/data';
-import Props from '../props/slideProps';
+import Props from '../../pages/api/types/slideProps';
 
 const Slide = () => {
   const slideImages = slideData[0];

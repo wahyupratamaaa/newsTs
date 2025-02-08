@@ -4,6 +4,7 @@ import { GoBell } from 'react-icons/go';
 import { SiWikibooks } from 'react-icons/si';
 import Image from 'next/image';
 import { navbar as ItemNavbar } from '../../pages/api/data';
+import { iconPath } from '../../pages/api/data';
 
 const Navbar = () => {
   if (!ItemNavbar || ItemNavbar.length === 0) {
@@ -15,12 +16,23 @@ const Navbar = () => {
   }
 
   return (
-    <div className='w-full h-26 bg-[#fbfbfb] py-3'>
+    <div className='w-full h-26 bg-[#fbfbfb] py-8'>
       <div className='px-4 sm:px-8 md:px-16 lg:px-28 flex justify-between '>
         <div className='flex gap-16'>
           <div className='flex items-center gap-3'>
-            <Link href='/error'>
-              <p className='text-black text-2xl font-normal'>{title}</p>
+            <Link href='/' className='flex items-center gap-3'>
+              <svg
+                width='35'
+                height='35'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                fillRule='evenodd'
+                clipRule='evenodd'
+                className='inline-block fill-current '
+              >
+                <path d={iconPath}></path>
+              </svg>
+              <p className='font-bold'>{`News Tech />`} </p>
             </Link>
           </div>
         </div>

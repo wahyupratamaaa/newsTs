@@ -54,7 +54,7 @@ const Sampultag = () => {
             <span>{destination}</span>
             <div>
               <Link
-                href='/tagline'
+                href='/news/'
                 className='flex items-center justify-center p-3 bg-black text-white rounded-2xl w-1/4'
               >
                 Learn More
