@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { sampulTag as ItemSampul } from '../../pages/api/data';
+import { poppins } from '../../components/fonts/poppins';
 const Sampultag = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const { tagline, destination } = ItemSampul[0];
@@ -51,7 +52,7 @@ const Sampultag = () => {
             {tagline}
           </motion.p>
           <div className='flex flex-col w-1/3 gap-5'>
-            <span>{destination}</span>
+            <span className={`${poppins.className}`}>{destination}</span>
             <div>
               <Link
                 href='/news/'

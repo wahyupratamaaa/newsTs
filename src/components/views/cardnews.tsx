@@ -1,6 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import Cardright from '../atompage/cardright';
+import { poppins } from '../../components/fonts/poppins';
+
+const cardVariants = {
+  hidden: { opacity: 0, filter: 'blur(5px)' },
+  visible: (i: number) => ({
+    opacity: 1,
+    filter: 'blur(0px)',
+    transition: {
+      delay: i * 0.1,
+    },
+  }),
+};
 
 const Cardnews = () => {
   return (
@@ -10,11 +23,15 @@ const Cardnews = () => {
       </p>
       <div className='w-screen px-4 sm:px-8 md:px-16 lg:px-28'>
         <div className='flex'>
-          <div className='flex flex-wrap justify-start gap-3'>
+          <div className='flex flex-wrap justify-start gap-3 '>
             {[...Array(18)].map((_, index) => (
-              <div
+              <motion.div
                 key={index}
-                className='flex flex-col w-[300px] max-w-[25%] gap-5'
+                className='flex flex-col w-[300px] max-w-[30%] gap-5 border shadow-lg p-2 rounded-lg '
+                custom={index}
+                initial='hidden'
+                whileInView='visible'
+                variants={cardVariants}
               >
                 <Image
                   src='https://plus.unsplash.com/premium_photo-1738946837565-85f20772aae2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D'
@@ -24,12 +41,19 @@ const Cardnews = () => {
                   height={300}
                 />
                 <div className='flex flex-col gap-1 mb-5'>
-                  <p className='text-lg font-bold'>Migransi diJawatimur</p>
-                  <p className='text-sm text-zinc-500'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  <p className={`text-xs font-bold ${poppins.className}`}>
+                    Lorem ipsum dolor, sit
                   </p>
+
+                  <span className='text-xs w-full text-zinc-500 text-justify line-clamp-4 indent-8'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga sint laudantium, accusantium non porro officiis
+                    reprehenderit voluptate nostrum architecto maxime quos
+                    pariatur quas ex expedita. Dolor assumenda eveniet atque
+                    dolores!
+                  </span>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           <Cardright />

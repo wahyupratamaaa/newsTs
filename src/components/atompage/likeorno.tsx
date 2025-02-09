@@ -28,15 +28,13 @@ const Likeorno = () => {
               unoptimized
             />
           ) : (
-            <>
-              <Image
-                src={liked ? '/like.gif' : '/disklike.gif'}
-                alt={liked ? 'Like' : 'Disklike'}
-                width={50}
-                height={50}
-                unoptimized
-              />
-            </>
+            <Image
+              src={liked ? '/like.gif' : '/disklike.gif'}
+              alt={liked ? 'Like' : 'Disklike'}
+              width={50}
+              height={50}
+              unoptimized
+            />
           )}
         </div>
         <p className='text-black text-lg font-medium ml-2 text-center'>

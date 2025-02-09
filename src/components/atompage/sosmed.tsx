@@ -10,7 +10,7 @@ const Sosmed: React.FC = () => {
     const fetchData = async () => {
       try {
         const data = await fetchApps();
-        const item = data.find((item) => item.id === 10);
+        const item = data.find((item) => item.id === 1);
         if (item && item.socialMedia) {
           setSosmedItems(item.socialMedia);
         } else {
@@ -25,7 +25,6 @@ const Sosmed: React.FC = () => {
         setLoading(false);
       }
     };
-
     fetchData();
   }, []);
 
