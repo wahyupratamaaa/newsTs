@@ -38,7 +38,7 @@ const SectionComponent = () => {
             <Image
               src={image}
               alt='tema'
-              className='w-full h-[700px] mt-10 rounded-2xl cursor-pointer'
+              className='w-full h-[700px] mt-10 rounded-2xl cursor-pointer object-cover '
               width={1000}
               height={700}
             />
