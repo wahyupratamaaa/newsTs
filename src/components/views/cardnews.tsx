@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Cardright from '../atompage/cardright';
+import Cardright from '../ui/cardright';
 import { poppins } from '../../components/fonts/poppins';
 
 const cardVariants = {
@@ -44,7 +44,6 @@ const Cardnews = () => {
                   <p className={`text-xs font-bold ${poppins.className}`}>
                     Lorem ipsum dolor, sit
                   </p>
-
                   <span className='text-xs w-full text-zinc-500 text-justify line-clamp-4 indent-8'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fuga sint laudantium, accusantium non porro officiis

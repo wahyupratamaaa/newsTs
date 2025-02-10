@@ -30,7 +30,7 @@ const features = [
 
 const Text = () => {
   return (
-    <div className='w-screen px-26 mt-16 sm:px-8 md:px-16 lg:px-28 flex justify-center py-80'>
+    <div className='w-screen px-26 mt-16 flex justify-center py-80'>
       <div className='flex flex-col items-center gap-14'>
         <div className='text-center flex flex-col gap-3'>
           <motion.p

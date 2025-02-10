@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../views/navbar';
-import Navsmile from '../views/navsmile';
+import Navsmile from '../views/navsmall';
 import Footer from '../views/footer';
 
 type Props = {

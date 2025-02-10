@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-// import animationNews from '../../../public/animation/newspaper.json';
 import { poppins } from '../fonts/poppins';
-// import Lottie from 'lottie-react';
 
 const Cardright = () => {
   const [text, setText] = useState('');
@@ -32,7 +30,7 @@ const Cardright = () => {
   }, []);
 
   return (
-    <div className='flex flex-col w-[250rem] justify-between h-1/2 border border-dashed border-black rounded-xl p-10 gap-3 '>
+    <div className='flex flex-col w-[250rem] justify-between h-1/2 border border-dashed border-black rounded-xl p-10 gap-3 hover:shadow-2xl hover:bg-indigo-200 '>
       <p className={`text-xl font-poppins-400 ${poppins.className}`}>{text}</p>
       <div className='flex justify-end'>
         <Image
@@ -40,6 +38,8 @@ const Cardright = () => {
           alt='telent'
           width={100}
           height={100}
+          className='animate-bounce mt-10'
+          style={{ animationDuration: '2s' }}
         ></Image>
       </div>
     </div>

@@ -1,29 +1,27 @@
 import React from 'react';
 import Image from 'next/image';
-import { IoReturnDownBack } from 'react-icons/io5';
-import Link from 'next/link';
+import Backlink from '../../components/ui/Linkback';
+import { poppins } from '../../components/fonts/poppins';
 
 const Singlenews = () => {
   return (
     <>
-      <Link href={'/'}>
-        <div className='p-10'>
-          <div className='inline-flex justify-start gap-3 p-2 bg-white border border-dashed rounded-lg cursor-pointer border-black px-4'>
-            <IoReturnDownBack size={15} />
-            <p className='text-xs'>Back</p>
-          </div>
-        </div>
-      </Link>
-      <main className='w-screen h-auto flex items-center justify-center py-20'>
+      <div className='p-10'>
+        <Backlink text='Back' />
+      </div>
+
+      <main
+        className={`w-screen h-auto flex items-center justify-center py-20 ${poppins.className}`}
+      >
         <article className='flex flex-col items-center gap-3'>
           <header className='flex gap-2 justify-center items-center font-medium text-gray-500 italic'>
             <span className='bg-[#F3FCD2] p-2 rounded-2xl'>Popular Post</span>
             <time dateTime='2022-10-23'>Oktober 23 2022</time>
           </header>
-          <h1 className='text-6xl font-medium text-center w-1/2'>
+          <h1 className='text-3xl font-medium text-center w-1/2'>
             Here is another preview for detailed “Article” page
           </h1>
-          <p className='w-1/2 text-center text-zinc-500'>
+          <p className='w-1/2 text-center text-sm text-zinc-500'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             soluta dicta nesciunt accusantium. Nostrum quod quas maxime fugit
             aliquam, unde id alias consequuntur provident. Odit adipisci
@@ -36,11 +34,11 @@ const Singlenews = () => {
             width={100}
             height={100}
           />
-          <section className='flex gap-2 justify-start w-1/2'>
-            <div className='flex flex-col'>
-              <h2 className='text-2xl font-semibold'>
-                Here is another preview
-              </h2>
+          <section
+            className={`flex gap-2 justify-start w-1/2 text-xs ${poppins.className}`}
+          >
+            <div className='flex flex-col gap-3'>
+              <h2 className='text-sm font-semibold'>bere is another preview</h2>
               <p className='text-zinc-500 '>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
                 excepturi nam necessitatibus sapiente, molestias consequatur
@@ -51,8 +49,8 @@ const Singlenews = () => {
                 incidunt consequatur voluptatibus cupiditate adipisci, fuga
                 assumenda, voluptates nam cum blanditiis eum voluptate?
               </p>
-              <h2 className='text-2xl font-semibold'>
-                Here is another preview
+              <h2 className='text-sm font-semibold '>
+                bere is another preview
               </h2>
               <p className='text-zinc-500 '>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed

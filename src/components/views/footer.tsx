@@ -1,10 +1,10 @@
 import React from 'react';
-import Sosialfooter from '../atompage/sosiafooter';
+import Sosialfooter from '../ui/sosiafooter';
 import { iconPath } from '../../pages/api/data';
 
 const Footer = () => {
   return (
-    <footer className='footer flex flex-col gap-8 footer-center bg-primary text-primary-content p-10 px-4 sm:px-8 md:px-16 lg:px-28'>
+    <footer className='footer flex flex-col gap-8 footer-center bg-primary text-primary-content p-10 px-4 sm:px-8 md:px-16 lg:px-28 '>
       <aside className='flex flex-col gap-5'>
         <svg
           width='50'

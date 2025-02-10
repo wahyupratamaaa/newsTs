@@ -1,7 +1,7 @@
 // api/apiClient.ts
 
 import axios from 'axios';
-import typesApi from './types/typesApi';
+import typesApi from '../../types/typesApi';
 
 const ApiData = 'http://localhost:3000/api/';
 

@@ -1,9 +1,10 @@
 // import { MdInfo } from 'react-icons/md';
 import Image from 'next/image';
-import Sosmed from '../atompage/sosmed';
+import Sosmed from '../ui/sosmed';
 import { Section as ItemSection } from '../../pages/api/data';
-import LikeorNo from '../atompage/likeorno';
+import LikeorNo from '../ui/likeorno';
 import Link from 'next/link';
+import { poppins } from '../../components/fonts/poppins';
 
 type PropsSection = {
   title: string;
@@ -19,7 +20,11 @@ const SectionComponent = ({ title, des, image }: PropsSection) => {
           <span className='text-8xl min-w-3xl font-bold text-zinc-500 w-2/3'>
             {title}
           </span>
-          <span className='flex flex-col justify-end w-1/5 text-sm'>{des}</span>
+          <span
+            className={`flex flex-col justify-end w-1/5 text-sm ${poppins.className}`}
+          >
+            {des}
+          </span>
         </div>
         <div className='relative mt-10 cursor-pointer'>
           <Link href={'/news'}>
@@ -35,7 +40,7 @@ const SectionComponent = ({ title, des, image }: PropsSection) => {
             <p className='text-2xl font-semibold text-white'>BioEnergy</p>
           </div>
           <div className='absolute bottom-0 left-0 right-0 p-10 flex justify-start'>
-            <Sosmed />
+            <Sosmed id={2} />
             <div className='absolute bottom-0 right-20 -top-10'>
               <LikeorNo />
             </div>

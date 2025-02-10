@@ -37,7 +37,7 @@ const Tagv2 = () => {
             <Lottie
               animationData={Newsanimation}
               loop={true}
-              className='w-[200px] h-[200px]  border border-red-500 '
+              className='w-[200px] h-[200px] '
             />
           </div>
         </div>

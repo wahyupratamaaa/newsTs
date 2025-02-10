@@ -1,8 +1,7 @@
 import React from 'react';
-// import { FaSadTear } from 'react-icons/fa';
-import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
+import Backlink from '../components/ui/Linkback';
 
 const Error = () => {
   return (
@@ -29,12 +28,7 @@ const Error = () => {
             </p>
           </div>
           <div className='flex justify-end py-2 w-full'>
-            <Link
-              href='/'
-              className='p-2 border border-dashed border-gray-500 text-black rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-xl hover:border-dashe hover:border-white'
-            >
-              Back home
-            </Link>
+            <Backlink text='Back Home' />
           </div>
         </div>
       </div>
