@@ -1,18 +1,25 @@
-// import { MdInfo } from 'react-icons/md';
 import Image from 'next/image';
 import Sosmed from '../ui/sosmed';
-import { Section as ItemSection } from '../../pages/api/data';
 import LikeorNo from '../ui/likeorno';
 import Link from 'next/link';
 import { poppins } from '../../components/fonts/poppins';
+import useFetchNews from '../hooks/useFetchNews';
+import typesApi from '../../types/typesApi';
+const SectionComponent = () => {
+  const { data, loading, error } = useFetchNews();
 
-type PropsSection = {
-  title: string;
-  des: string;
-  image: string;
-};
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
-const SectionComponent = ({ title, des, image }: PropsSection) => {
+  const filteredData = data.filter(
+    (item): item is typesApi => item.id !== undefined
+  );
+  const item = filteredData.find((item) => item.id === 1);
+  const title = item?.title || 'Loading...';
+  const des = item?.smalldesc || 'Loading...';
+  const image = item?.imageUrl || '';
+  const smalltag = item?.smalltag || '';
+
   return (
     <div className='w-screen h-auto py-12 pt-32'>
       <div className='px-4 sm:px-8 md:px-16 lg:px-28'>
@@ -27,7 +34,7 @@ const SectionComponent = ({ title, des, image }: PropsSection) => {
           </span>
         </div>
         <div className='relative mt-10 cursor-pointer'>
-          <Link href={'/news'}>
+          <Link href={`/news/${item?.id}`}>
             <Image
               src={image}
               alt='tema'
@@ -37,10 +44,10 @@ const SectionComponent = ({ title, des, image }: PropsSection) => {
             />
           </Link>
           <div className='absolute top-0 left-0 p-10'>
-            <p className='text-2xl font-semibold text-white'>BioEnergy</p>
+            <p className='text-2xl font-semibold text-white'>{smalltag}</p>
           </div>
           <div className='absolute bottom-0 left-0 right-0 p-10 flex justify-start'>
-            <Sosmed id={2} />
+            <Sosmed id={1} />
             <div className='absolute bottom-0 right-20 -top-10'>
               <LikeorNo />
             </div>
@@ -50,19 +57,5 @@ const SectionComponent = ({ title, des, image }: PropsSection) => {
     </div>
   );
 };
-const SectionList = () => {
-  return (
-    <>
-      {ItemSection.map((item, index) => (
-        <SectionComponent
-          key={index}
-          title={item.title}
-          des={item.des}
-          image={item.image}
-        />
-      ))}
-    </>
-  );
-};
 
-export default SectionList;
+export default SectionComponent;
