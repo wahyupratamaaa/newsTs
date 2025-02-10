@@ -1,5 +1,5 @@
 import React from 'react';
-import { icons } from '../../pages/api/data';
+import { icons } from '../../../pages/api/data';
 const Sosiafooter = () => {
   return (
     <nav>

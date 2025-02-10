@@ -1,5 +1,5 @@
 import React from 'react';
-import Sosialfooter from '../ui/sosiafooter';
+import Sosialfooter from './ui/sosiafooter';
 import { iconPath } from '../../pages/api/data';
 
 const Footer = () => {

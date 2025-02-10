@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { poppins } from '../fonts/poppins';
+import { poppins } from '../../fonts/poppins';
 
 const Cardright = () => {
   const [text, setText] = useState('');

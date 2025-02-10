@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Sosmed from '../ui/sosmed';
-import LikeorNo from '../ui/likeorno';
+import Sosmed from './ui/sosmed';
+import LikeorNo from './ui/likeorno';
 import Link from 'next/link';
 import { poppins } from '../../components/fonts/poppins';
 import useFetchNews from '../hooks/useFetchNews';

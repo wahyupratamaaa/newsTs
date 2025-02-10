@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import useFetchNews from '../hooks/useFetchNews';
+import useFetchNews from '../../hooks/useFetchNews';
 
 interface NewsItem {
   id: number | undefined;

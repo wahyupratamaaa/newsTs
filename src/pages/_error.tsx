@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Backlink from '../components/ui/Linkback';
+import Backlink from '../components/views/ui/Linkback';
 
 const Error = () => {
   return (

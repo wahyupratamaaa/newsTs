@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Cardright from '../ui/cardright';
+import Cardright from './ui/cardright';
 import { poppins } from '../../components/fonts/poppins';
 
 const cardVariants = {
