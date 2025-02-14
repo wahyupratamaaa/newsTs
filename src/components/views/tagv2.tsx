@@ -33,11 +33,11 @@ const Tagv2 = () => {
           >
             {text}
           </p>
-          <div className='flex justify-end '>
+          <div className='flex justify-end items-end p-0 m-0'>
             <Lottie
               animationData={Newsanimation}
               loop={true}
-              className='w-[200px] h-[200px] '
+              className='w-fit h-fit border border-red-500 m-0 p-0'
             />
           </div>
         </div>

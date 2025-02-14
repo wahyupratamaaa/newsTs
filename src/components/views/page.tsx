@@ -2,7 +2,7 @@ import React from 'react';
 import Section from './section';
 import Tag from './tag';
 import SampulTag from './sampultag';
-import Slide from './slide';
+// import Slide from './slide';
 import Text from '../views/text';
 import Cardnews from '../views/cardnews';
 import Tagv2 from './tagv2';
@@ -13,7 +13,7 @@ const Page = () => {
       <Section />
       <Tag />
       <SampulTag />
-      <Slide />
+      {/* <Slide /> */}
       <Text />
       <Cardnews />
       <Tagv2 />

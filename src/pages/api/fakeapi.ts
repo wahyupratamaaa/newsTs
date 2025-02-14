@@ -32,7 +32,7 @@ export default function fakeapi(
       description:
         'Bali dikenal dengan pantainya yang indah, termasuk Pantai Nusa Dua dan Pantai Jimbaran. Pantai pasir putih di Bali menawarkan suasana yang santai dan pemandangan yang menawan. Anda dapat menikmati keindahan pantai sambil berenang atau bermain di pasir putih.',
       imageUrl:
-        'https://images.unsplash.com/photo-1537500059284-6dec490c4d3a?w=800&auto=format&fit=crop&q=60',
+        'https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2VyfGVufDB8fDB8fHww',
       socialMedia: ['Facebook', 'Instagram', 'Twitter'],
       smalltag: 'Bali',
       popularPost: false,
@@ -71,7 +71,7 @@ export default function fakeapi(
       description:
         'Gunung Himalaya di Nepal menawarkan pemandangan yang menakjubkan dengan puncak-puncak gunung tertinggi di dunia. Anda dapat menikmati pemandangan Gunung Himalaya dari berbagai sudut, termasuk dari kota Kathmandu atau saat berjalan-jalan di Pokhara. Gunung Himalaya juga merupakan destinasi populer untuk mendaki.',
       imageUrl:
-        'https://images.unsplash.com/photo-1567122181169-4f6632ed2d8d?w=800&auto=format&fit=crop&q=60',
+        'https://images.unsplash.com/photo-1520763185298-1b434c919102?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHVsaXB8ZW58MHx8MHx8fDA%3D',
       socialMedia: ['Instagram', 'Pinterest', 'LinkedIn'],
       smalltag: 'Nepal',
       popularPost: true,

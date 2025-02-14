@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+
 import { sampulTag as ItemSampul } from '../../pages/api/data';
 import { poppins } from '../../components/fonts/poppins';
 const Sampultag = () => {
@@ -35,7 +35,7 @@ const Sampultag = () => {
   }, []);
 
   return (
-    <div className='w-screen h-auto px-26 mt-10 '>
+    <div className='w-screen h-auto px-26 py-28 '>
       <div className='p-10 px-4 sm:px-8 md:px-16 lg:px-28'>
         <div className='flex p-5 justify-between'>
           <motion.p
@@ -53,14 +53,7 @@ const Sampultag = () => {
           </motion.p>
           <div className='flex flex-col w-1/3 gap-5'>
             <span className={`${poppins.className}`}>{destination}</span>
-            <div>
-              <Link
-                href='/news/'
-                className='flex items-center justify-center p-3 bg-black text-white rounded-2xl w-1/4'
-              >
-                Learn More
-              </Link>
-            </div>
+            <div></div>
           </div>
         </div>
       </div>
